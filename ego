@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهدی - پورتفولیو فرانت‌اند</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
+        body { 
+            font-family: 'Vazirmatn', sans-serif; 
+            background: linear-gradient(135deg, #0d1117 0%, #21262d 100%); 
+            color: #c9d1d9; 
+            margin: 0; 
+            padding: 20px; 
+            line-height: 1.6;
+        }
+        .container { 
+            max-width: 900px; 
+            margin: auto; 
+            text-align: center; 
+        }
+        h1 { 
+            color: #58a6ff; 
+            font-size: 3em; 
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+        }
+        .subtitle { 
+            color: #8b949e; 
+            font-size: 1.2em; 
+            margin-bottom: 40px;
+        }
+        .projects { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 25px; 
+            margin-top: 50px; 
+        }
+        .project-card { 
+            background: #161b22; 
+            padding: 25px; 
+            border-radius: 12px; 
+            border: 1px solid #30363d; 
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(88, 166, 255, 0.1);
+        }
+        .project-card h3 { 
+            color: #58a6ff; 
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        .project-card p { 
+            color: #8b949e; 
+            margin-bottom: 15px;
+        }
+        .project-card a { 
+            color: #58a6ff; 
+            text-decoration: none; 
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        .project-card a:hover { 
+            text-decoration: underline;
+        }
+        footer { 
+            margin-top: 80px; 
+            padding-top: 30px; 
+            border-top: 1px solid #30363d;
+            color: #8b949e; 
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مهدی</h1>
+        <p class="subtitle">توسعه‌دهنده فرانت‌اند | HTML - CSS - jQuery - JavaScript</p>
+        
+        <div class="projects">
+            <div class="project-card">
+                <h3>لندینگ پیج تجاری</h3>
+                <p>صفحه فرود مدرن با انیمیشن‌های jQuery و طراحی ریسپانسیو</p>
+                <a href="/projects/landing-page/index.html" target="_blank">دمو زنده</a> | 
+                <a href="https://github.com/mahdiixo3/mahdiixo3.github.io/tree/main/projects/landing-page" target="_blank">کد منبع</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>اپ To-Do List با jQuery</h3>
+                <p>لیست وظایف تعاملی با ذخیره‌سازی محلی و افکت‌های روان</p>
+                <a href="/projects/todo-app-jquery/index.html" target="_blank">دمو زنده</a> | 
+                <a href="https://github.com/mahdiixo3/mahdiixo3.github.io/tree/main/projects/todo-app-jquery" target="_blank">کد منبع</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>ماشین حساب پیشرفته</h3>
+                <p>محاسبه‌گر با عملیات ریاضی، تاریخ و ارز با jQuery</p>
+                <a href="/projects/calculator/index.html" target="_blank">دمو زنده</a> | 
+                <a href="https://github.com/mahdiixo3/mahdiixo3.github.io/tree/main/projects/calculator" target="_blank">کد منبع</a>
+            </div>
+            
+            <!-- هر پروژه جدیدی که داری، همینجا اضافه کن. مثلاً: -->
+            <!-- <div class="project-card"> ... </div> -->
+        </div>
+        
+        <footer>
+            <p>تماس: your-email@gmail.com | <a href="https://github.com/mahdiixo3" style="color: #58a6ff;">گیت‌هاب</a> | <a href="https://linkedin.com/in/mahdiixo3" style="color: #58a6ff;">لینکدین</a></p>
+            <p style="margin-top: 10px; font-size: 0.9em;">© ۲۰۲۵ مهدی - ساخته شده با ❤️ و کد</p>
+        </footer>
+    </div>
+</body>
+</html>
