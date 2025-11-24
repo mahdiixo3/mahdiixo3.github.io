@@ -3,33 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahdiixo3 Portfolio</title>
+  <title>Mahdiixo3 | Front-end Developer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: white;
-      scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+      background: #0e0e0e;
+      color: #fff;
     }
 
     header {
-      padding: 40px;
+      padding: 70px 10%;
       text-align: center;
-      background: linear-gradient(135deg, #222, #111);
-      border-bottom: 2px solid #444;
+      background: linear-gradient(135deg, #161616, #0d0d0d);
+      border-bottom: 1px solid #333;
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 48px;
       margin: 0;
-      letter-spacing: 2px;
+      font-weight: 600;
     }
 
     header p {
-      margin-top: 10px;
-      color: #ccc;
+      margin-top: 12px;
+      opacity: 0.7;
       font-size: 18px;
     }
 
@@ -37,54 +42,58 @@
       padding: 60px 10%;
     }
 
-    /* About Section */
-    #about {
+    .section h2 {
+      font-size: 34px;
+      margin-bottom: 25px;
       text-align: center;
     }
 
-    #about h2 {
-      font-size: 34px;
-      margin-bottom: 20px;
-    }
-
-    /* Projects Section */
-    #projects h2 {
-      font-size: 34px;
-      margin-bottom: 30px;
-    }
-
+    /* Projects Grid */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 25px;
     }
 
     .project-card {
-      background: #161616;
+      background: #1a1a1a;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       border: 1px solid #333;
-      transition: 0.3s;
+      transition: 0.35s;
     }
 
     .project-card:hover {
       transform: translateY(-8px);
-      background: #1e1e1e;
+      border-color: #4eaaff;
+      box-shadow: 0 4px 12px rgba(78, 170, 255, 0.25);
     }
 
     .project-card h3 {
-      margin-top: 0;
+      margin: 0 0 10px;
       font-size: 22px;
+    }
+
+    .project-card p {
+      opacity: 0.7;
+      font-size: 14px;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #4eaaff;
+      text-decoration: none;
+      font-weight: 600;
     }
 
     /* Footer */
     footer {
+      margin-top: 50px;
       text-align: center;
       padding: 25px;
-      background: #111;
-      margin-top: 50px;
       border-top: 1px solid #333;
-      color: #aaa;
+      opacity: 0.6;
     }
   </style>
 </head>
@@ -92,45 +101,45 @@
 <body>
 
   <header>
-    <h1>Mahdiixo3 Portfolio</h1>
-    <p>Front-end Developer | Student | Project Builder</p>
+    <h1>Mahdiixo3</h1>
+    <p>Front-end Developer • HTML • CSS • JavaScript • jQuery</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
+  <!-- About Me -->
+  <section class="section" id="about">
     <h2>About Me</h2>
-    <p>
-      I'm Mahdiixo, a developer who builds clean, modern and powerful projects.  
-      Here you can see all my public works and future additions.
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      I'm Mahdiixo3, a front-end developer focused on modern UI/UX, fast performance, clean code and beautiful interactive websites.
+      Here you will find all my projects, demos, and experiments.
     </p>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
+  <!-- Projects -->
+  <section class="section" id="projects">
     <h2>My Projects</h2>
 
     <div class="projects-grid">
 
-      <!-- Example Project Card -->
+      <!-- SAMPLE PROJECT - Replace or Duplicate -->
       <div class="project-card">
         <h3>Calculator App</h3>
-        <p>A simple modern calculator built with HTML/CSS/JS</p>
-        <a href="calculator/" style="color:#4eaaff;">View Project →</a>
+        <p>A modern calculator UI built using HTML, CSS, JavaScript.</p>
+        <a href="calculator/">Demo →</a>
       </div>
 
       <div class="project-card">
-        <h3>My Portfolio Template</h3>
-        <p>The source code of this portfolio template.</p>
-        <a href="#" style="color:#4eaaff;">View Project →</a>
+        <h3>Todo App</h3>
+        <p>Task manager with jQuery and localStorage.</p>
+        <a href="todo/">Demo →</a>
       </div>
 
-      <!-- Add More Projects Here -->
-      
+      <!-- Add more projects below (I'll teach you) -->
+
     </div>
   </section>
 
   <footer>
-    © 2025 - Mahdiixo3 | All Rights Reserved
+    © 2025 — Built by Mahdiixo3. All rights reserved.
   </footer>
 
 </body>
